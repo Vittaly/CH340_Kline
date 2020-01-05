@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:CH340_Kline-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -24,28 +25,17 @@ F 3 "~" H 1050 1950 50  0001 C CNN
 	1    1050 1950
 	-1   0    0    -1  
 $EndComp
-$Comp
-L L9613:L9613 D1
-U 1 1 5E110E0D
-P 2500 1650
-F 0 "D1" H 2550 1715 50  0000 C CNN
-F 1 "L9613" H 2550 1624 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2500 1650 50  0001 C CNN
-F 3 "" H 2500 1650 50  0001 C CNN
-	1    2500 1650
-	1    0    0    -1  
-$EndComp
-Text GLabel 1250 1750 2    50   Input ~ 0
-Rx
-Text GLabel 1250 1850 2    50   Input ~ 0
-Tx
-Text GLabel 1250 2050 2    50   Input ~ 0
-5V
 Text GLabel 1250 2150 2    50   Input ~ 0
+Rx
+Text GLabel 1250 2050 2    50   Input ~ 0
+Tx
+Text GLabel 1250 1750 2    50   Input ~ 0
+5V
+Text GLabel 1250 1850 2    50   Input ~ 0
 Vcc
-Text GLabel 1250 2250 2    50   Input ~ 0
+Text GLabel 1250 1950 2    50   Input ~ 0
 3.3V
-Text GLabel 1450 2450 2    50   Input ~ 0
+Text GLabel 1550 2450 2    50   Input ~ 0
 5V
 Text GLabel 1450 2450 0    50   Input ~ 0
 Vcc
@@ -87,12 +77,12 @@ Vss
 $Comp
 L power:GND #PWR0101
 U 1 1 5E112951
-P 1250 1950
-F 0 "#PWR0101" H 1250 1700 50  0001 C CNN
-F 1 "GND" V 1255 1822 50  0000 R CNN
-F 2 "" H 1250 1950 50  0001 C CNN
-F 3 "" H 1250 1950 50  0001 C CNN
-	1    1250 1950
+P 1250 2250
+F 0 "#PWR0101" H 1250 2000 50  0001 C CNN
+F 1 "GND" V 1255 2122 50  0000 R CNN
+F 2 "" H 1250 2250 50  0001 C CNN
+F 3 "" H 1250 2250 50  0001 C CNN
+	1    1250 2250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -245,4 +235,17 @@ F 3 "~" H 4200 1900 50  0001 C CNN
 	1    4200 1900
 	1    0    0    -1  
 $EndComp
+$Comp
+L L9613:L9637D D1
+U 1 1 5E122230
+P 2500 1650
+F 0 "D1" H 2550 1715 50  0000 C CNN
+F 1 "L9637D" H 2550 1624 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2500 1650 50  0001 C CNN
+F 3 "" H 2500 1650 50  0001 C CNN
+	1    2500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2450 1550 2450
 $EndSCHEMATC
